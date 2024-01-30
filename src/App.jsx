@@ -30,15 +30,15 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       {(
-          import.meta.env.NODE_ENV !== "development" 
-          // Uncomment the following line to disable the Tunnel Toolbar in production
-          // && process.env.RAILWAY_GIT_BRANCH !== 'main'
-          ) && (
-          <TunnelToolbar 
-            projectId={import.meta.env.TUNNEL_PROJECT_ID}
-            branch={import.meta.env.RAILWAY_GIT_BRANCH}
-          />
-        )}
+        import.meta.env.NODE_ENV !== "development" 
+        // Uncomment the following line to disable the Tunnel Toolbar in production
+        // && process.env.RAILWAY_GIT_BRANCH !== 'main'
+        ) && (
+        <TunnelToolbar 
+          projectId={import.meta.env.VITE_TUNNEL_PROJECT_ID}
+          branch={import.meta.env.RAILWAY_GIT_BRANCH}
+        />
+      )}
     </>
   )
 }
