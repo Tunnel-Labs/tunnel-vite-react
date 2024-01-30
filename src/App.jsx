@@ -30,13 +30,13 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       {(
-          process.env.NODE_ENV !== "development" 
+          import.meta.env.NODE_ENV !== "development" 
           // Uncomment the following line to disable the Tunnel Toolbar in production
           // && process.env.RAILWAY_GIT_BRANCH !== 'main'
           ) && (
           <TunnelToolbar 
-            projectId={process.env.TUNNEL_PROJECT_ID}
-            branch={process.env.RAILWAY_GIT_BRANCH}
+            projectId={import.meta.env.TUNNEL_PROJECT_ID}
+            branch={import.meta.env.RAILWAY_GIT_BRANCH}
           />
         )}
     </>
